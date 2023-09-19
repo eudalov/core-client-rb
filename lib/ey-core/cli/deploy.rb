@@ -80,7 +80,7 @@ EOF
 
           deploy_options = {verbose: switch_active?(:verbose), cli_args: ARGV}
           latest_deploy = nil
-	  if options[:serverside_version]
+	        if options[:serverside_version]
             deploy_options.merge!(serverside_version: option(:serverside_version))
           end
           if options[:ref]
